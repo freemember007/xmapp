@@ -13,7 +13,7 @@
 	<statusbar-hidden>false</statusbar-hidden>
 	<fullscreen>false</fullscreen>
 	<navbar-hidden>false</navbar-hidden>
-	<analytics>true</analytics>
+	<analytics>false</analytics>
 	<guid>61804395-9742-4541-bf5b-a6f8f5da4998</guid>
 	<property name="ti.ui.defaultunit" type="string">system</property>
 	<iphone>
