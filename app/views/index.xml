@@ -1,5 +1,19 @@
 <Alloy>
-	<Window class="container">
-		<Label id="label" onClick="doClick">Hello, World</Label>
-	</Window>
+	<TabGroup id="tabGroup">
+		<Tab id="tab1" title="最新" >
+			<Require src="latest"/>
+		</Tab>
+		<Tab id="tab2" title="分类" >
+			<Require src="catelog"/>
+		</Tab>
+		<Tab id="tab3" title="网站">
+			<Require src="mall"/>
+		</Tab>
+		<Tab id="tab5" title="海外购" >
+			<Require src="oversea"/>
+		</Tab>
+		<Tab id="tab5" title="优惠券" >
+			<Require src="coupon"/>
+		</Tab>
+	</TabGroup>	
 </Alloy>

@@ -2,4 +2,8 @@ function doClick(e) {
     alert($.label.text);
 }
 
-$.index.open();
+if (OS_IOS){
+	Titanium.UI.iPhone.statusBarStyle = Titanium.UI.iPhone.StatusBar.TRANSLUCENT_BLACK;
+}
+
+$.tabGroup.open();
