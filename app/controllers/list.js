@@ -15,7 +15,7 @@ function fetchFeed(reset){
 	if (reset == true){
 		offset = 0;
 	}
-  util.get(path + id + '/' + offset.toString(), function(res){
+  util.get(path + id + '/' + offset, function(res){
   	$.table.remove(actInd);
   	offset += 10;
 		var data = JSON.parse(res);

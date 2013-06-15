@@ -1,5 +1,6 @@
 .DS_Store
-.setting/
+.settings/
+.project
 build.log
 build/
 Resources/

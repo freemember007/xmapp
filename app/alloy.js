@@ -58,7 +58,6 @@ var moment = require('alloy/moment');
 var util = require("util");
 
 //定义GUI规格
-Alloy.Globals.sitePath = ENV_DEV? "http://localhost:4567/" : "http://xmzdm.com/";
 Alloy.Globals.GUI_bkC = "#fff";
 Alloy.Globals.GUI_FC = "#000";
 

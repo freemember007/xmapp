@@ -51,8 +51,6 @@ var moment = require("alloy/moment");
 
 var util = require("util");
 
-Alloy.Globals.sitePath = "http://localhost:4567/";
-
 Alloy.Globals.GUI_bkC = "#fff";
 
 Alloy.Globals.GUI_FC = "#000";

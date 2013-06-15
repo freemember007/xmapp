@@ -1,4 +1,4 @@
-var sitePath = ENV_DEV? "http://xmzdm.com/" : "http://xmzdm.com/";
+var sitePath = ENV_DEV? "http://localhost:4567/" : "http://www.xmzdm.com/";
 
 
 exports.send = function(url, data, onload){
@@ -8,7 +8,7 @@ exports.send = function(url, data, onload){
 		return;
 	}
 	var xhr = Titanium.Network.createHTTPClient();
-	xhr.timeout = 60000;
+	xhr.timeout = 6000;
     xhr.onload = function(e){
     	if (this.status != 200) {
 	        alert(e);
@@ -42,7 +42,7 @@ exports.get = function(url, onload){
     xhr.onerror = function(e){
         alert(e.error);
     };
-    xhr.open('get',sitePath + url);
+    xhr.open('GET',sitePath + url);
     xhr.send();
 }
 
