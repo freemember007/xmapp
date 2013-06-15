@@ -6,16 +6,16 @@ function Controller() {
     var exports = {};
     $.__views.tabGroup = Ti.UI.createTabGroup({
         backgroundColor: "#fff",
-        barColor: "#ff6f27",
-        activeTabIconTint: "#ff6600",
-        tabsBackgroundColor: "#ff6f27",
+        activeTabIconTint: "#ffcc00",
+        barColor: "#000",
+        tabsBackgroundColor: "#000",
         id: "tabGroup"
     });
     $.__views.__alloyId1 = Alloy.createController("latest", {
         id: "__alloyId1"
     });
     $.__views.tab1 = Ti.UI.createTab({
-        icon: "appicon.png",
+        icon: "rss.png",
         window: $.__views.__alloyId1.getViewEx({
             recurse: true
         }),
@@ -27,6 +27,7 @@ function Controller() {
         id: "__alloyId4"
     });
     $.__views.tab2 = Ti.UI.createTab({
+        icon: "grid.png",
         window: $.__views.__alloyId4.getViewEx({
             recurse: true
         }),
@@ -38,6 +39,7 @@ function Controller() {
         id: "__alloyId6"
     });
     $.__views.tab3 = Ti.UI.createTab({
+        icon: "globe.png",
         window: $.__views.__alloyId6.getViewEx({
             recurse: true
         }),
@@ -48,18 +50,20 @@ function Controller() {
     $.__views.__alloyId8 = Alloy.createController("oversea", {
         id: "__alloyId8"
     });
-    $.__views.tab5 = Ti.UI.createTab({
+    $.__views.tab4 = Ti.UI.createTab({
+        icon: "dollar.png",
         window: $.__views.__alloyId8.getViewEx({
             recurse: true
         }),
-        id: "tab5",
+        id: "tab4",
         title: "海外购"
     });
-    $.__views.tabGroup.addTab($.__views.tab5);
+    $.__views.tabGroup.addTab($.__views.tab4);
     $.__views.__alloyId10 = Alloy.createController("myFav", {
         id: "__alloyId10"
     });
     $.__views.tab5 = Ti.UI.createTab({
+        icon: "star.png",
         window: $.__views.__alloyId10.getViewEx({
             recurse: true
         }),

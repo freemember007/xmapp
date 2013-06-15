@@ -1,11 +1,27 @@
 '#tabGroup':{
 	backgroundColor: '#fff',
+	activeTabIconTint: '#ffcc00',
 	barColor: '#000',
-	activeTabIconTint: '#ff6600',
-	barColor: '#ff6f27',
-	tabsBackgroundColor: '#ff6f27',
+	tabsBackgroundColor: '#000',
 }
 
 '#tab1': {
-	icon: 'appicon.png',
+	icon: 'rss.png'
+}
+
+'#tab2': {
+	icon: 'grid.png'
+}
+
+'#tab3': {
+	icon: 'globe.png'
+}
+
+
+'#tab4': {
+	icon: 'dollar.png'
+}
+
+'#tab5': {
+	icon: 'star.png'
 }

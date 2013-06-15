@@ -9,7 +9,7 @@
 		<Tab id="tab3" title="商城">
 			<Require src="mall"/>
 		</Tab>
-		<Tab id="tab5" title="海外购" >
+		<Tab id="tab4" title="海外购" >
 			<Require src="oversea"/>
 		</Tab>
 		<Tab id="tab5" title="我的收藏" >
