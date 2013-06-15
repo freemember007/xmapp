@@ -1,0 +1,8 @@
+"Window": {
+	backgroundColor: "white",
+
+}
+
+'#webView': {
+	scalesPageToFit: true,
+}

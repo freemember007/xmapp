@@ -6,14 +6,14 @@
 		<Tab id="tab2" title="分类" >
 			<Require src="catelog"/>
 		</Tab>
-		<Tab id="tab3" title="网站">
+		<Tab id="tab3" title="商城">
 			<Require src="mall"/>
 		</Tab>
 		<Tab id="tab5" title="海外购" >
 			<Require src="oversea"/>
 		</Tab>
-		<Tab id="tab5" title="优惠券" >
-			<Require src="coupon"/>
+		<Tab id="tab5" title="我的收藏" >
+			<Require src="myFav"/>
 		</Tab>
 	</TabGroup>	
 </Alloy>

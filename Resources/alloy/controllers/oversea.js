@@ -12,6 +12,11 @@ function Controller() {
     $.__views.oversea && $.addTopLevelView($.__views.oversea);
     exports.destroy = function() {};
     _.extend($, $.__views);
+    var list = Alloy.createController("list", {
+        path: "api/feed/country/",
+        id: "2"
+    }).getView();
+    $.oversea.add(list);
     _.extend($, exports);
 }
 

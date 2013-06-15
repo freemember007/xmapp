@@ -6,54 +6,46 @@ function Controller() {
     var exports = {};
     $.__views.tabGroup = Ti.UI.createTabGroup({
         backgroundColor: "#fff",
-        barColor: "#000",
+        barColor: "#ff6f27",
+        activeTabIconTint: "#ff6600",
+        tabsBackgroundColor: "#ff6f27",
         id: "tabGroup"
     });
-    $.__views.__alloyId0 = Alloy.createController("latest", {
-        id: "__alloyId0"
+    $.__views.__alloyId1 = Alloy.createController("latest", {
+        id: "__alloyId1"
     });
     $.__views.tab1 = Ti.UI.createTab({
-        window: $.__views.__alloyId0.getViewEx({
+        icon: "appicon.png",
+        window: $.__views.__alloyId1.getViewEx({
             recurse: true
         }),
         id: "tab1",
         title: "最新"
     });
     $.__views.tabGroup.addTab($.__views.tab1);
-    $.__views.__alloyId2 = Alloy.createController("catelog", {
-        id: "__alloyId2"
+    $.__views.__alloyId4 = Alloy.createController("catelog", {
+        id: "__alloyId4"
     });
     $.__views.tab2 = Ti.UI.createTab({
-        window: $.__views.__alloyId2.getViewEx({
+        window: $.__views.__alloyId4.getViewEx({
             recurse: true
         }),
         id: "tab2",
         title: "分类"
     });
     $.__views.tabGroup.addTab($.__views.tab2);
-    $.__views.__alloyId4 = Alloy.createController("mall", {
-        id: "__alloyId4"
-    });
-    $.__views.tab3 = Ti.UI.createTab({
-        window: $.__views.__alloyId4.getViewEx({
-            recurse: true
-        }),
-        id: "tab3",
-        title: "网站"
-    });
-    $.__views.tabGroup.addTab($.__views.tab3);
-    $.__views.__alloyId6 = Alloy.createController("oversea", {
+    $.__views.__alloyId6 = Alloy.createController("mall", {
         id: "__alloyId6"
     });
-    $.__views.tab5 = Ti.UI.createTab({
+    $.__views.tab3 = Ti.UI.createTab({
         window: $.__views.__alloyId6.getViewEx({
             recurse: true
         }),
-        id: "tab5",
-        title: "海外购"
+        id: "tab3",
+        title: "商城"
     });
-    $.__views.tabGroup.addTab($.__views.tab5);
-    $.__views.__alloyId8 = Alloy.createController("coupon", {
+    $.__views.tabGroup.addTab($.__views.tab3);
+    $.__views.__alloyId8 = Alloy.createController("oversea", {
         id: "__alloyId8"
     });
     $.__views.tab5 = Ti.UI.createTab({
@@ -61,7 +53,18 @@ function Controller() {
             recurse: true
         }),
         id: "tab5",
-        title: "优惠券"
+        title: "海外购"
+    });
+    $.__views.tabGroup.addTab($.__views.tab5);
+    $.__views.__alloyId10 = Alloy.createController("myFav", {
+        id: "__alloyId10"
+    });
+    $.__views.tab5 = Ti.UI.createTab({
+        window: $.__views.__alloyId10.getViewEx({
+            recurse: true
+        }),
+        id: "tab5",
+        title: "我的收藏"
     });
     $.__views.tabGroup.addTab($.__views.tab5);
     $.__views.tabGroup && $.addTopLevelView($.__views.tabGroup);
@@ -69,6 +72,12 @@ function Controller() {
     _.extend($, $.__views);
     Titanium.UI.iPhone.statusBarStyle = Titanium.UI.iPhone.StatusBar.TRANSLUCENT_BLACK;
     $.tabGroup.open();
+    Alloy.Globals.tabGroup = $.tabGroup;
+    Alloy.Globals.tab1 = $.tab1;
+    Alloy.Globals.tab2 = $.tab2;
+    Alloy.Globals.tab3 = $.tab3;
+    Alloy.Globals.tab4 = $.tab4;
+    Alloy.Globals.tab5 = $.tab5;
     _.extend($, exports);
 }
 

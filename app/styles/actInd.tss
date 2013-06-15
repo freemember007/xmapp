@@ -1,0 +1,6 @@
+"ActivityIndicator":{
+	style: Titanium.UI.iPhone.ActivityIndicatorStyle.DARK,
+	message: "",
+	color: Alloy.Globals.GUI_FC,
+	font: {fontSize:14,},
+}

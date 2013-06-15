@@ -1,0 +1,4 @@
+<Alloy>
+	<Window onFocus='fetch' title='我的收藏'>
+	</Window>
+</Alloy>

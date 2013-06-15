@@ -1,0 +1,52 @@
+"Window": {
+	backgroundColor: Alloy.Globals.GUI_bkC
+}
+
+'#title': {
+	top:10,
+	font: {fontSize:18, fontWeight:'bold'},
+	width: 300,
+	height: 40
+}
+
+'#image': {
+	top: 60,
+	height: 200,
+	preventDefaultImage: true,
+	defaultImage: 'goodsBig.png'
+}
+
+'#price': {
+	top:240, 
+	width: 280,
+	textAlign: 'right',
+	font: { fontSize: 18, fontWeight: 'bold'},
+	backgroundColor:"#fff",
+	opacity: 0.9,
+	shadowColor:"#fff",
+	color: "red",
+	zIndex: 1
+}
+
+'#scrollView': {
+	width: 300,
+	top: 270, bottom: 55,
+}
+
+'#desc': {
+	font: {fontSize:14},
+	color: '#333',
+}
+
+"#button": {
+	bottom:10,
+	height: 32, width:'80%',
+	font:{fontSize:16, fontWeight:'bold'},
+	textAlign:"center",
+	backgroundColor:"#ff6600",
+	borderColor:"#ccc",
+	borderRadius: 5,
+	color: '#fff',
+	shadowColor:"#eee",
+	zIndex: 1
+}

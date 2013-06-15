@@ -1,4 +1,6 @@
 <Alloy>
-	<Window title='最新' class="container">
+	<Collection src="feed"/>
+	<Window title='最新'>
+		
 	</Window>
 </Alloy>

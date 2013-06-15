@@ -1,4 +1,6 @@
 <Alloy>
-	<Window title='商城' class="container">
+	<Window title='商城'>
+		<TableView id='table'>
+		</TableView>
 	</Window>
 </Alloy>

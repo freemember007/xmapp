@@ -1,4 +1,11 @@
 '#tabGroup':{
 	backgroundColor: '#fff',
-	barColor: '#000'
+	barColor: '#000',
+	activeTabIconTint: '#ff6600',
+	barColor: '#ff6f27',
+	tabsBackgroundColor: '#ff6f27',
+}
+
+'#tab1': {
+	icon: 'appicon.png',
 }

@@ -1,7 +1,8 @@
 .DS_Store
 .setting/
 build.log
-build
+build/
+Resources/
 npm-debug.log
-tmp
+tmp/
 .map

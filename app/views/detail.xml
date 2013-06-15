@@ -1,0 +1,14 @@
+<Alloy>
+	<Window onOpen='checkFav' title='商品详情'>
+		<RightNavButton>
+			<Button id="favButton" onClick='doFav' />
+		</RightNavButton>
+		<Label id='title' />
+		<ImageView id='image' onClick='zoomImage' />
+		<Label id='price' />
+		<ScrollView id='scrollView'>
+			<Label id='desc' />
+		</ScrollView>
+		<Label text='立即购买' id='button' onClick='openWebview' />
+	</Window>
+</Alloy>

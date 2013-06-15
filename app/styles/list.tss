@@ -1,0 +1,36 @@
+"#table": {
+	width:Ti.Platform.displayCaps.platformWidth,
+	backgroundColor: Alloy.Globals.GUI_bkC,
+}
+
+'.row': {
+	height: 90,
+	hasDetail: true
+}
+
+'.image': {
+	top: 10, left: 5,
+	width: 75,
+	preventDefaultImage: true,
+	defaultImage: 'goods.png'
+}
+
+'.title': {
+	top:10, left: 90, right: 5,
+	height: 35,
+	font: { fontSize: 14}
+}
+
+'.price': {
+	bottom:10, left: 90,
+	height: 16, width: 80, 
+	font: { fontSize: 16, fontWeight: 'bold'},
+	color: "red",
+}
+
+'.time': {
+	bottom:10, right: 5,
+	height: 16, 
+	font: { fontSize: 12},
+	color: "#999",
+}

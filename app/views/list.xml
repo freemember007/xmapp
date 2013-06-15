@@ -1,0 +1,11 @@
+<Alloy>
+	<Collection id="localFeeds" src="feed" instance="true"/>
+		<TableView dataCollection="$.localFeeds" id="table" >
+			<TableViewRow class="row" blink='{blink}' desc='{description}' mimage_url='{mimage_url}' onClick="showDetail">
+					<ImageView class="image" image="{image_url}" />
+					<Label class="title" text="{title}"/>
+					<Label class="price" text="{price}"/>
+					<Label class="time" text="{time}"/>
+			</TableViewRow>
+		</TableView>
+</Alloy>
