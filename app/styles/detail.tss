@@ -23,7 +23,7 @@
 	font: { fontSize: 18, fontWeight: 'bold'},
 	backgroundColor:"#fff",
 	opacity: 0.9,
-	shadowColor:"#fff",
+	shadowColor:"#ccc",
 	color: "red",
 	zIndex: 1
 }
@@ -47,6 +47,6 @@
 	borderColor:"#ccc",
 	borderRadius: 5,
 	color: '#fff',
-	shadowColor:"#eee",
+	shadowColor:"#fff",
 	zIndex: 1
 }

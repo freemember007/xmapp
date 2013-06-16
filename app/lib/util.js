@@ -1,4 +1,4 @@
-var sitePath = ENV_DEV? "http://localhost:4567/" : "http://www.xmzdm.com/";
+var sitePath = ENV_DEV? "http://xmzdm.com/" : "http://www.xmzdm.com/";
 
 
 exports.send = function(url, data, onload){

@@ -9,7 +9,7 @@ $.price.text = '限时抢购：' + args.children[2].text
 // 识别商品所在网站
 for (var i=0; i<util.mallData.length; i++) {
 	if ( (args.blink).indexOf(util.mallData[i].id) != -1 ) {
-		$.button.text = '去' + util.mallData[i].title + '购买';
+		$.button.text = '去' + util.mallData[i].title + '抢购';
 	}
 }
 

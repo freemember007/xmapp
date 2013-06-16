@@ -6,6 +6,7 @@ var id = args.id;
 // 活动指示器
 var actInd = Alloy.createController('actInd').getView();
 $.table.add(actInd);
+setTimeout(function(){$.table.remove(actInd)}, 5000); //5秒后无论fetch是否成功，强行移除actInd
 
 // 获取数据
 var offset = 0;
@@ -15,8 +16,9 @@ function fetchFeed(reset){
 	if (reset == true){
 		offset = 0;
 	}
+
   util.get(path + id + '/' + offset, function(res){
-  	$.table.remove(actInd);
+  	actInd.hide();
   	offset += 10;
 		var data = JSON.parse(res);
 		if (reset == true){
@@ -38,6 +40,7 @@ function fetchFeed(reset){
 				pname:data[i]. pname
 			});
 			feeds.add(feed);
+			updating = false; // 底部刷新标识状态，避免出现多个加载row.
 	  }
 	  
 	})
@@ -70,11 +73,12 @@ function beginUpdate(){
 	updating = true;
 	$.table.appendRow(loadingRow);
 	loadingInd.show();//貌似这个必须有，否则仅第一次显示
-	setTimeout(endUpdate,2000);
+	// setTimeout(endUpdate,2000);
+	endUpdate();
 }
 function endUpdate(){
-	updating = false;
 	fetchFeed();
+	// updating = false;
 }
 $.table.addEventListener('scroll',function(e){
 	if ((!updating) && path !== 'local' && e.contentSize.height>800 && (e.contentOffset.y + e.size.height + 32 > e.contentSize.height)) {
