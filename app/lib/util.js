@@ -22,7 +22,7 @@ exports.send = function(url, data, onload){
     };
     xhr.open('POST',sitePath + url);
     xhr.send(data);
-}
+};
 
 exports.get = function(url, onload){
 	var networkType = Ti.Network.getNetworkType();
@@ -44,7 +44,7 @@ exports.get = function(url, onload){
     };
     xhr.open('GET',sitePath + url);
     xhr.send();
-}
+};
 
 exports.mallData = [
 	 {id:'taobao.com',title:'淘宝'},
@@ -65,4 +65,4 @@ exports.alert = function(message){
 		message: message,
 		ok: "确定"
 	}).show();
-}
+};
